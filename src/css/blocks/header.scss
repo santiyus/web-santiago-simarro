@@ -1,0 +1,69 @@
+.rrss {
+    z-index: 1;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $menu-fondo;
+    font-size: 16px;
+    @include laptor {
+        &__linkedin:hover {
+            transform: scale(1.50);
+            // background-color: #0A66C2;
+            color: $rrss-linkedin;
+        }
+        &__email:hover {
+            transform: scale(1.50);
+            color: $rrss-email;
+        }
+        &__git:hover {
+            transform: scale(1.50);
+            color: $rrss-git;
+        }
+    }
+}
+
+.rrss a {
+    // color: black;
+    color: $menu-letra;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    padding: 0 5px;
+    background-image: url('../../assets/imagenes/p3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $menu-letra;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    &__logo {}
+    &__titulo {
+        font-family: 'vollkorn', cursive;
+        font-size: 73px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &__descripcion {
+        font-size: 20px;
+        margin-top: 0;
+    }
+    &__flecha {
+        text-decoration: none;
+        font-size: 40px;
+        color: $menu-letra;
+        -webkit-tap-highlight-color: transparent;
+        @include laptor {
+            &:hover {
+                transform: translateY(5px) scale(1.09);
+            }
+        }
+    }
+}

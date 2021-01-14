@@ -1,0 +1,19 @@
+:root {
+    --menu-fondo: black;
+    --menu-letra: #fff;
+    --rrss-linkedin: #0A66C2;
+    --rrss-email: #E94034;
+    --rrss-git: #644d09;
+    --section-oscuro: #f0f0f0;
+    --letra-good: rgba(3, 117, 3, 0.863);
+    --letra-error: #ec0000;
+}
+
+$menu-fondo: var(--menu-fondo);
+$menu-letra: var(--menu-letra);
+$rrss-linkedin: var(--rrss-linkedin);
+$rrss-email: var(--rrss-email);
+$rrss-git: var(--rrss-git);
+$section-oscuro: var(--section-oscuro);
+$letra-good: var(--letra-good);
+$letra-error: var(--letra-error);

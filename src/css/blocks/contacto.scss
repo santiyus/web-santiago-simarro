@@ -1,0 +1,51 @@
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    width: 85%;
+    @include tablet {
+        width: 50%;
+    }
+    & div {
+        display: flex;
+        flex-direction: column;
+    }
+    &__input {
+        font-family: 'Balsamiq Sans', cursive;
+        margin: 0.7em 0;
+        height: 35px;
+        padding-left: .3em;
+        padding-top: .3em;
+        border: 1px solid gray;
+        border-radius: 9px;
+        outline: none;
+        @include laptor {
+            &:focus {
+                transform: scale(1.01);
+                border: 2px solid gray;
+            }
+        }
+    }
+    &__area {
+        margin: 0.7em 0;
+        height: 140px;
+    }
+    &__none {
+        display: none;
+    }
+    &__good {
+        transition: 0.5s;
+        color: $letra-good
+    }
+    &__error {
+        transition: 0.5s;
+        color: $letra-error;
+    }
+    &__border-error {
+        transition: 0.5s;
+        border: 2px solid $letra-error;
+    }
+}

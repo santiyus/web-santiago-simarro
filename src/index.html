@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este sitio web proporciona información que te permitirá conocer de Santiago Simarro sus conocimientos como programdor fullstack y su hobbies. ">
+    <meta property="og:title" content="Santiago Simarro">
+    <link rel="icon" type="image/png" href="./assets/imagenes/perfil.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/11614eb144.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="./js/scripts-min.js" defer></script>
+
+    <title>Santiago Simarro - Web Personal</title>
+</head>
+
+<body>
+
+    <div class="rrss">
+        <a href="https://github.com/santiyus" class="rrss__git" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/santiago-simarro-lópez-544327134" class="rrss__linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:santiago.simarro.lopez@gmail.com" class="rrss__email" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+    <header class="header" id="inicio">
+        <img src="./assets/imagenes/logo-blanco.png" alt="logo" class="header__logo">
+        <h1 class="header__titulo">SANTIAGO SIMARRO</h1>
+        <p class="header__descripcion">Desarrollador fullstack, entrenador de fútbol y deportista.</p>
+        <a href="#sobre-mi" class="header__flecha"><i class="fas fa-angle-down "></i></a>
+    </header>
+
+
+
+    <div class="main-menu">
+
+        <div class="top-bar">
+            <div class="menu-icon" id="menu-icon">
+                <div class="menu-icon__bar"></div>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu" id="menu">
+                <div class="menu__logo" id="logo-menu">
+                    <img src="./assets/imagenes/logo-blanco.png" alt="logo" class="menu-img">
+                </div>
+                <div class="menu__items">
+                    <li class="menu__item menu__inicio">
+                        <a href="#inicio" class="menu__link">Inicio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#sobre-mi" class="menu__link">Sobre mi</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#conocimientos" class="menu__link">Conocimientos</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#hobbies" class="menu__link">Hobbies</a>
+                    </li>
+                    <!-- <li class="menu__item">
+                        <a href="#rrss" class="menu__link">RRSS</a>
+                    </li> -->
+                    <li class="menu__item">
+                        <a href="#contacto" class="menu__link">Contacto</a>
+                    </li>
+
+                </div>
+            </ul>
+        </nav>
+
+    </div>
+
+    <main>
+        <section id="sobre-mi" class="section sobremi-content" data-index="1">
+            <h2 class="titulos-section">Sobre Mi</h2>
+            <div class="sobremi-content__parrafos">
+                <p>Me presento, soy Santiago Simarro, nací en el 1995. Vivo en Colmenar Viejo, un pueblo situado en la Cuenca Alta del Manzanares, al noroeste de Madrid. Aquí crecí y también es donde comencé mi formación académica hasta acabar bachillerato.</p>
+                <p>Seguidamente, como siempre estaba trasteando con el ordenador, con los sistemas operativos de mi móvil y los de mis amigos, y en mi familia era el técnico para cualquier aparato tecnológico que hubiese en la casa, me decidí a estudiar
+                    el grado superior de aplicaciones multiplataforma. Una vez acabado he podido aprender mucho y trabajar de ello hasta el día de hoy. </p>
+                <p>Además de esto, soy entrenador de fútbol y muy deportista, pero esto te lo cuento en sector de hobbies ;)</p>
+                <!-- <img src="./assets/imagenes/perfil.jpg" alt="Foto Perfil"> -->
+            </div>
+        </section>
+
+        <section id="conocimientos" class="section cono" data-index="2">
+            <h2 class="titulos-section">Conocimientos</h2>
+            <article class="cono__article">
+                <h3>Lenguajes Puros</h3>
+                <div class="cono__img-puros">
+                    <img src="./assets/svg/java.svg" alt="Java" class="cono__img">
+                    <img src="./assets/svg/javascript.svg" alt="Javascript" class="cono__img">
+                    <img src="./assets/svg/html5.svg" alt="Html5" class="cono__img">
+                    <img src="./assets/svg/css3.svg" alt="Css" class="cono__img">
+                    <img src="./assets/svg/mysql.svg" alt="MySql" class="cono__img">
+                </div>
+
+            </article>
+            <article class="cono__article">
+                <h3>Frameworks</h3>
+                <div class="cono__img-framework">
+                    <img src="./assets/svg/spring.svg" alt="Srpring Boot">
+                    <img src="./assets/svg/hibernate.svg" alt="Hibernate">
+                    <img src="./assets/svg/angular.svg" alt="Angular">
+                    <img src="./assets/svg/sass.svg" alt="Saas">
+                </div>
+            </article>
+            <article class="cono__article">
+                <h3>Control de versiones y gestores de proyectos</h3>
+                <div class="cono__img-gest">
+                    <img src="./assets/svg/git.svg" alt="Git">
+                    <img src="./assets/svg/maven.svg" alt="Maven">
+                    <img src="./assets/svg/gulp.svg" alt="Gulp">
+                </div>
+            </article>
+
+
+        </section>
+
+        <section id="hobbies" class="section hobbies" data-index="3">
+            <h2 class="titulos-section">Hobbies</h2>
+            <article class="hobbies__article">
+                <h3>Entrenador de Fútbol</h3>
+                <div class="hobbies__div">
+                    <div>
+                        <p class="hobbies__p1">Unas de mis pasiones desde pequeño ha sido el fútbol, siempre he querido estar ligado a este mundo. Es tan la pasión por este deporte, que no me valía solo con jugar, cuando tenía 13 años arbitré mi primer partido, desde entonces,
+                            estuve arbitrando con la federación de fútbol madrileña fin de semana tras fin de semana, hasta que decidí sacarme los cursos de entrenador de fútbol. En este momento tenía 17 años, dejé el arbitraje y comencé a entrenar a
+                            un equipo de chicos de 11 y 12 años, fueron pasando los años y empezaba a entrenar equipos de más edad, llegando a entrenar un equipo sénior con 22 años. </p>
+                        <p>En el transcurso de estos años, también colaboré un año con la federación de fútbol madrileña como monitor de un colegio en los campeonatos escolares que organizaba esta misma federación.</p>
+                        <p>Actualmente sigo entrenando equipos de fútbol y disfrutando de este gran deporte conociendo gente maravillosa.</p>
+                    </div>
+                    <img src="./assets/imagenes/mister.jpg" alt="Santiago de entrenador">
+                </div>
+            </article>
+            <article class="hobbies__article">
+                <h3>Deportista</h3>
+                <div class="hobbies__div hobbies__reverse">
+                    <div>
+                        <p class="hobbies__p1">Siempre me ha gustado hacer deporte. El futbol fue mi primer deporte, estuve jugando desde los 5 años hasta los 21 años que decidir dejar de jugar de forma federada. </p>
+                        <p>Una vez terminada mi etapa futbolística, nunca paré de practicar deporte, ya que iba al gimnasio, salía a correr, iba de rutas con la bicicleta de carretera y estuve un año haciendo crossfit. Pero la verdad, no era suficiente,
+                            tenía que encontrar el deporte que me llenara, que me complementara tanto como lo hizo el fútbol durante tantos años. </p>
+                        <p>Así que, opte por el triatlón. Es un deporte que siempre me había llamado mucho la atención, combina tres deportes en uno. Viendo que muchas veces salía a correr o en bici, y de pequeño había estado en natación, me aventuré a dar
+                            el paso de apuntarme al club de mi pueblo, el Perlas Triatlón Colmenar y hasta la actualidad que sigo en este magnífico deporte. </p>
+                    </div>
+                    <img src="./assets/imagenes/bici2.jpg" alt="Santiago corriendo">
+                </div>
+
+            </article>
+        </section>
+
+        <section id="contacto" class="section contacto" data-index="4">
+            <h2 class="titulos-section">Contacto</h2>
+            <form id="form" class="form" novalidate>
+                <div>
+                    <input type="text" maxlength="20" id="nombre" name="nombre" class="form__input" placeholder="Nombre*">
+
+                    <input type="email" maxlength="50" required id="email" name="email" class="form__input" placeholder="Correo electronico*">
+
+                    <input type="number" maxlength="9" id="telefono" name="telefono" class="form__input" placeholder="Telefono">
+
+                    <input type="text" id="asunto" name="asunto" class="form__input" maxlength="100" placeholder="Asunto">
+
+                    <textarea type="text" id="texto" name="texto" class="form__input form__area" placeholder="Tu mensaje*" maxlength="600" required></textarea>
+                </div>
+                <button type="submit" class="btn btn__negro">Enviar</button>
+                <!-- <p id="msg_good" class="form__none form__good">*El mensaje se ha enviado correctamente.</p> -->
+                <p id="msg_good" class="form__none form__good">*El mensaje ha sido enviado correctamente.</p>
+                <p id="msg_error_revisar" class="form__none form__error">*Revise los campos.</p>
+                <p id="msg_error" class="form__none form__error">*No se ha podido enviar el correo.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__p">&copy; Copyright - Desarrollado por Santiago Simarro</p>
+    </footer>
+
+
+</body>
+
+</html>

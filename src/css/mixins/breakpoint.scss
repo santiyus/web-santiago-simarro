@@ -1,0 +1,31 @@
+$mobile: 425 px;
+$tablet: 768px;
+$laptor: 1024px;
+$desktop: 1400px;
+// Tamaño para moviles
+@mixin mobile {
+    @media screen and (max-width: $mobile) {
+        @content;
+    }
+}
+
+// Tamaño para tablet
+@mixin tablet {
+    @media screen and (min-width: $tablet) {
+        @content;
+    }
+}
+
+// Tamaño para portatil
+@mixin laptor {
+    @media screen and (min-width: $laptor) {
+        @content;
+    }
+}
+
+// Tamaño para pc
+@mixin desktop {
+    @media screen and (min-width: $desktop) {
+        @content;
+    }
+}

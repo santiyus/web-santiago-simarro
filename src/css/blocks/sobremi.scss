@@ -1,0 +1,17 @@
+.sobremi-content {
+    background-color: $section-oscuro;
+    box-shadow: 0 1px 5px rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+    &__parrafos {
+        font-family: 'Balsamiq Sans', cursive;
+        width: 85%;
+        font-size: 18px;
+        @include tablet {
+            width: 70%;
+        }
+        // margin: 0 auto;
+    }
+}
